@@ -9,7 +9,7 @@ a {
     text-decoration: none;
 }
 
-/* reset browser margings and padings */
+/* reset browser margins and paddings */
 
 h1, h2, h3, h4, h6, h6, p {
     margin: 0;
@@ -76,6 +76,12 @@ body {
     color: #434455;
 }
 
+/* width for the whole page */
+.container {
+    width: 1128px;
+    margin: 0 auto;
+}
+
 /* header styles */
 .logo-header {
     font-family: "Raleway", sans-serif;
@@ -85,10 +91,14 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .logo-header > span {
     color: #2e2f42;
+    margin-right: 76px;
 }
 
 .header-titles {
@@ -99,12 +109,20 @@ body {
     color: #2e2f42;
 }
 
-.header-titles:hover,
-.header-titles:focus {
-    color: #404bbf;
+.header-container {
+    display: flex;
 }
 
-.header-address {
+.header-list {
+    display: flex;
+    gap: 40px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+/* address */
+
+.header-address-item {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -113,12 +131,29 @@ body {
     font-style: normal;
 }
 
-.header-address:hover,
-.header-address:focus {
+.address-container {
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
+    display: flex;
+    margin-left: 332px;
+}
+
+/* hovers */
+
+.header-titles:hover,
+.header-titles:focus,
+.header-address-item:hover,
+.header-address-item:focus {
     color: #404bbf;
 }
 
- /* hero banner styles */
+ /* hero section styles */
 .hero-banner {
     background-color: #2e2f42;
 }
@@ -138,17 +173,53 @@ body {
     background-color: #404bbf;
 }
 
-/* our team styles */
+/* advantages section styles */
+
+.advantages-container {
+    display: flex;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.advantages-list {
+    display: flex;
+}
+
+.list-title {
+    margin-bottom: 8px;
+}
+
+/* our team section styles */
+
+
 .our-team {
     background-color: #F4F4FD;
 }
 .our-team-cards
  {
     background: #fff;
+    /* margin-top: 232px; */
+    margin-bottom: 120px;
 }
 
+.our-team-list {
+    display: flex;
+    gap: 24px;
+}
 
-/* footer styles */
+/* our portfolio section styles */
+
+.our-portfolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 120px;
+    /* margin-top: 232px; */
+
+}
+
+/* the footer styles */
 .footer {
     background-color: #2e2f42;
 }
@@ -173,3 +244,21 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+/* hide the advantages h2 title */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+
