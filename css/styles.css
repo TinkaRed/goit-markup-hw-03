@@ -24,6 +24,7 @@ button {
     padding-bottom: 0;
     padding-right: 0;
     padding-left: 0;
+    border: 0;
 }
 
 ul,
@@ -48,6 +49,8 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    padding-top: 188px;
+    padding-bottom: 48px;
 }
 
 .section-title {
@@ -58,6 +61,10 @@ body {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 
 .list-title {
@@ -91,7 +98,6 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    display: flex;
     margin-top: 24px;
     margin-bottom: 24px;
 }
@@ -156,6 +162,9 @@ body {
  /* hero section styles */
 .hero-banner {
     background-color: #2e2f42;
+    height: 600px;
+    display: flex;
+    text-align: center;
 }
 
 .hero-button {
@@ -166,6 +175,9 @@ body {
     cursor: pointer;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    width: 169px;
+    height: 56px;
+
 }
 
 .hero-button:hover,
@@ -183,14 +195,16 @@ body {
 
 .advantages-list {
     display: flex;
+    gap: 24px;
 }
 
 .list-title {
     margin-bottom: 8px;
+    width: 264px;
+    box-sizing: border-box;
 }
 
 /* our team section styles */
-
 
 .our-team {
     background-color: #F4F4FD;
@@ -198,7 +212,6 @@ body {
 .our-team-cards
  {
     background: #fff;
-    /* margin-top: 232px; */
     margin-bottom: 120px;
 }
 
@@ -215,7 +228,6 @@ body {
     flex-wrap: wrap;
     gap: 24px;
     margin-bottom: 120px;
-    /* margin-top: 232px; */
 
 }
 
@@ -231,8 +243,9 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5
+    color: #4d5ae5;
 }
+
 .footer-logo-color {
     color: #f4f4fd;
 }
@@ -243,6 +256,13 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
+    margin-top: 16px;
+}
+
+.footer-container {
+    height: 312px;
+    padding-top: 100px;
 }
 
 /* hide the advantages h2 title */
