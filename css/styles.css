@@ -41,6 +41,10 @@ body {
     background-color: #fff;
 }
 
+img {
+    display: block;
+}
+
 /* h2, h3, <p> styles */
 
 .section-title {
@@ -54,7 +58,7 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .list-title {
@@ -77,9 +81,15 @@ body {
 .container {
     width: 1128px;
     margin: 0 auto;
+    padding: 120px 0;
 }
 
 /* header styles */
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
 .logo-header {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -107,6 +117,8 @@ body {
 
 .header-container {
     display: flex;
+    width: 1158px;
+    padding: 0 15px;
 }
 
 .header-list {
@@ -114,6 +126,11 @@ body {
     gap: 40px;
     margin-top: 24px;
     margin-bottom: 24px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
 }
 
 /* address */
@@ -157,18 +174,15 @@ body {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #fff;
-    padding-top: 188px;
-    padding-bottom: 48px;
+    /* padding-top: 188px;
+    padding-bottom: 48px; */
+    padding: 188px 0;
+    width: 496px;
 }
 
 .hero-banner {
     background-color: #2e2f42;
     height: 600px;
-}
-
-.hero-title-container {
-    width: 496px;
-    text-align: center;
 }
 
 .hero-button {
@@ -179,9 +193,10 @@ body {
     cursor: pointer;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
-
+    display: block;
+    border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -193,8 +208,7 @@ body {
 
 .advantages-container {
     display: flex;
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding: 120px 0;
 }
 
 .advantages-list {
@@ -213,10 +227,12 @@ body {
 .our-team {
     background-color: #F4F4FD;
 }
+
 .our-team-cards
  {
     background: #fff;
     margin-bottom: 120px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-list {
@@ -224,7 +240,16 @@ body {
     gap: 24px;
 }
 
+.our-team-cards-item {
+    padding: 32px 0;
+}
+
 /* our portfolio section styles */
+
+.our-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .our-portfolio-list {
     display: flex;
@@ -232,7 +257,13 @@ body {
     flex-wrap: wrap;
     gap: 24px;
     margin-bottom: 120px;
+    row-gap: 48px;
+}
 
+.our-portfolio-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 /* the footer styles */
@@ -248,6 +279,8 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-color {
@@ -266,7 +299,7 @@ body {
 
 .footer-container {
     height: 312px;
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 /* hide the advantages h2 title */
