@@ -41,17 +41,7 @@ body {
     background-color: #fff;
 }
 
-/* h1, h2, h3, <p> styles */
-.hero-title {
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #fff;
-    padding-top: 188px;
-    padding-bottom: 48px;
-}
+/* h2, h3, <p> styles */
 
 .section-title {
     font-weight: 700;
@@ -160,10 +150,24 @@ body {
 }
 
  /* hero section styles */
+
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: #fff;
+    padding-top: 188px;
+    padding-bottom: 48px;
+}
+
 .hero-banner {
     background-color: #2e2f42;
     height: 600px;
-    display: flex;
+}
+
+.hero-title-container {
+    width: 496px;
     text-align: center;
 }
 
