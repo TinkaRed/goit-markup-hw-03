@@ -74,9 +74,9 @@ img {
 
 /* width for the whole page */
 .container {
-    width: 1128px;
+    width: 1158px;
     margin: 0 auto;
-    padding: 120px 0;
+    padding: 0 15;
 }
 
 /* header styles */
@@ -167,9 +167,6 @@ img {
 .hero-banner {
     background-color: #2e2f42;
     height: 600px;
-}
-
-.hero-banner-container {
     padding: 188px 0;
 }
 
@@ -210,7 +207,7 @@ img {
 
 /* advantages section styles */
 
-.advantages-container {
+.advantages {
     display: flex;
     padding: 120px 0;
     height: 344px;
@@ -240,7 +237,6 @@ img {
 
 .our-team-cards {
     background: #fff;
-    margin-bottom: 120px;
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -285,7 +281,6 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
-    margin-bottom: 120px;
     row-gap: 48px;
 }
 
@@ -302,11 +297,8 @@ img {
 /* the footer styles */
 .footer {
     background-color: #2e2f42;
-}
-
-.footer-container {
-    height: 312px;
     padding: 100px 0;
+    height: 312px;
 }
 
 .logo-footer {
