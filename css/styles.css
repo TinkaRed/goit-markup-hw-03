@@ -3,7 +3,6 @@
 ul,
 ol {
     list-style-type: none;
-    list-style-type: none;
     margin: 0;
     padding: 0;
 }
@@ -13,17 +12,20 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h6, h6, p {
+h1,
+h2,
+h3,
+h4,
+h6,
+h6,
+p {
     margin: 0;
 }
 
 /* for the button */
 
 button {
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0;
     border: 0;
 }
 
@@ -33,6 +35,7 @@ body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #fff;
+    margin: 0;
 }
 
 img {
@@ -51,7 +54,6 @@ img {
     display: flex;
     justify-content: center;
     margin-bottom: 72px;
-    text-align: center;
 }
 
 .list-title {
@@ -96,7 +98,7 @@ img {
     margin-right: 76px;
 }
 
-.logo-header > span {
+.logo-header>span {
     color: #2e2f42;
 }
 
@@ -160,7 +162,16 @@ img {
     color: #404bbf;
 }
 
- /* hero section styles */
+/* hero section styles */
+
+.hero-banner {
+    background-color: #2e2f42;
+    height: 600px;
+}
+
+.hero-banner-container {
+    padding: 188px 0;
+}
 
 .hero-title {
     font-weight: 700;
@@ -169,11 +180,11 @@ img {
     letter-spacing: 0.02em;
     color: #fff;
     max-width: 496px;
-}
-
-.hero-banner {
-    background-color: #2e2f42;
-    padding: 188px 0;
+    text-align: center;
+    margin-bottom: 48px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-button {
@@ -186,8 +197,10 @@ img {
     letter-spacing: 0.04em;
     min-width: 169px;
     height: 56px;
-    display: block;
     border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-button:hover,
@@ -200,6 +213,7 @@ img {
 .advantages-container {
     display: flex;
     padding: 120px 0;
+    height: 344px;
 }
 
 .advantages-list {
@@ -213,19 +227,18 @@ img {
     box-sizing: border-box;
 }
 
-.advantages {
-    padding: 120px 0;
-}
-
 /* our team section styles */
 
 .our-team {
     background-color: #F4F4FD;
-    padding: 120px 0;
 }
 
-.our-team-cards
- {
+.our-team-container {
+    padding: 120px 0;
+    height: 732px;
+}
+
+.our-team-cards {
     background: #fff;
     margin-bottom: 120px;
     border-radius: 0px 0px 4px 4px;
@@ -261,7 +274,8 @@ img {
 
 /* our portfolio section styles */
 
-.our-portfolio {
+.our-portfolio-container {
+    height: 1240px;
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -288,6 +302,10 @@ img {
 /* the footer styles */
 .footer {
     background-color: #2e2f42;
+}
+
+.footer-container {
+    height: 312px;
     padding: 100px 0;
 }
 
@@ -314,11 +332,6 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
-    margin-top: 16px;
-}
-
-.footer-container {
-    height: 312px;
 }
 
 /* hide the advantages h2 title */
@@ -335,6 +348,3 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
-
-
